@@ -1,12 +1,17 @@
-section {
-  padding: 20px;
-  background: #ff3c41;
-  color: #fff;
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 20px);
+  grid-template-rows: repeat(12, 20px);
 }
 
-.grid {
-  display: inline-grid;
-  padding: 20px;
-  background: #f9f9f9;
-  color: #333;
+.bg-gray {
+  background: #717790;
+}
+
+.bg-red {
+  background: #ff3c41;
+}
+
+.bg-blue {
+  background: #0ebeff;
 }

@@ -1,22 +1,17 @@
-install: install-deps
-	npx simple-git-hooks
-
-run:
-	bin/nodejs-package.js 10
-
-install-deps:
-	npm ci
-
-test:
-	npm test
-
-test-coverage:
-	npm test -- --coverage --coverageProvider=v8
+install:
+	npm install
 
 lint:
-	npx eslint .
+	npx stylelint ./src/styles/*.css
+	npx stylelint ./src/styles/**/*.scss
+	npx htmlhint ./src/*.html
 
-publish:
-	npm publish
+fix-lint:
+	npx stylelint --fix ./src/styles/*.css
+	npx stylelint --fix ./src/styles/**/*.scss
 
-.PHONY: test
+deploy:
+	npx surge ./src/
+
+compile:
+	sass --watch src/styles/scss/app.scss src/styles/app.css

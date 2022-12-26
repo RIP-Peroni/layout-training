@@ -1,17 +1,12 @@
-.grid-12 {
-  display: grid;
-  height: 300px;
-  background: #b9f;
-}
-
-.bg-gray {
-  background: #717790;
-}
-
-.bg-red {
+section {
+  padding: 20px;
   background: #ff3c41;
+  color: #fff;
 }
 
-.bg-blue {
-  background: #0ebeff;
+.grid {
+  display: inline-grid;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #333;
 }

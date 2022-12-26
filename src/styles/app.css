@@ -1,19 +1,13 @@
+body {
+  margin: 0;
+}
+
 .grid-12 {
   display: grid;
-  width: 333px;
-  height: 115px;
-  margin-bottom: 50px;
-  background: #e3e4e8;
-}
-
-.auto-fill-20 {
-  grid-template-columns: repeat(auto-fill, 20px);
-  grid-template-rows: repeat(auto-fill, 20px);
-}
-
-.auto-fit-20 {
-  grid-template-columns: repeat(auto-fit, 20px);
-  grid-template-rows: repeat(auto-fit, 20px);
+  grid-template-columns: 1fr 2fr 1fr repeat(9, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
+  width: 100vw;
 }
 
 .bg-gray {

@@ -1,20 +1,19 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-.grid-12 {
+.grid-6 {
   display: grid;
-  grid-template-columns: [sidebar-begin] 1fr repeat(3, 1fr) [main-begin] 1fr repeat(7, 1fr);
-  grid-template-rows: [header-top] 1fr 1fr [content-begin] 1fr repeat(9, 1fr);
-
-  height: 100vh;
+  grid-template-areas: "header header header header header ."
+                       "aside  aside  main   main   main   main";
 }
 
-.grid-element {
-  padding: 5px;
-  font-size: 14px;
-  color: #fff;
+.grid-header {
+  grid-area: header;
+}
+
+.grid-aside {
+  grid-area: aside;
+}
+
+.grid-main {
+  grid-area: main;
 }
 
 .bg-gray {
@@ -27,25 +26,4 @@ body {
 
 .bg-blue {
   background: #0ebeff;
-}
-
-.grid-header {
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-row-start: header-top;
-  grid-row-end: content-begin;
-}
-
-.grid-aside {
-  grid-column-start: sidebar-begin;
-  grid-column-end: main-begin;
-  grid-row-start: 3;
-  grid-row-end: 13;
-}
-
-.grid-main {
-  grid-column-start: main-begin;
-  grid-column-end: 13;
-  grid-row-start: 3;
-  grid-row-end: 13;
 }

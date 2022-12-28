@@ -1,14 +1,19 @@
-.grid-6 {
+.grid-line {
   display: grid;
-  grid-template-areas: "header header header header header ." "aside  aside  main   main   main   main";
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-header {
-  grid-area: header;
+.grid-3 {
+  display: grid;
+  grid-template-areas: "aside-left main aside-right";
 }
 
-.grid-aside {
-  grid-area: aside;
+.grid-aside-left {
+  grid-area: aside-left;
+}
+
+.grid-aside-right {
+  grid-area: aside-right;
 }
 
 .grid-main {

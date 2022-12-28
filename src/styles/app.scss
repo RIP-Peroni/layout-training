@@ -1,33 +1,100 @@
-.grid-line {
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url("../assets/fonts/JetBrainsMono-Regular.ttf");
+}
+
+.code-editor {
+  /* BEGIN (write your solution here) */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header header header header"
+    "aside aside main main main main"
+    "aside aside footer footer footer footer";
+  grid-template-rows: max-content;
+  grid-template-columns: repeat(6, 1fr);
+
+  /* END */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  color: #fff;
+  font: 18px/1.5 JetBrainsMono, monospace;
+
+  background: #33235a;
 }
 
-.grid-3 {
-  display: grid;
-  grid-template-areas: "aside-left main aside-right";
+.code-editor pre {
+  font-family: JetBrainsMono, monospace;
 }
 
-.grid-aside-left {
-  grid-area: aside-left;
+.editor-header {
+  --font-size: 10px;
+  --line-height: 1.5;
+
+  /* BEGIN (write your solution here) */
+  grid-area: header;
+
+  /* END */
+  height: calc(var(--font-size) * var(--line-height));
+  padding: 5px 0;
+
+  color: #fff;
+  font: var(--font-size) / var(--line-height) sans-serif;
+  text-align: center;
+
+  background: #241a3d;
 }
 
-.grid-aside-right {
-  grid-area: aside-right;
+.editor-tree {
+  /* BEGIN (write your solution here) */
+  grid-area: aside;
+
+  /* END */
+  border-right: 3px solid #00ffc0;
 }
 
-.grid-main {
+.editor-main {
+  /* BEGIN (write your solution here) */
   grid-area: main;
+
+  /* END */
+  padding: 30px;
+
+  background: #241a3d;
+  border-bottom: 3px solid #00ffc0;
 }
 
-.bg-gray {
-  background: #717790;
+.editor-footer {
+  /* BEGIN (write your solution here) */
+  grid-area: footer;
+
+  /* END */
+  padding: 30px;
 }
 
-.bg-red {
-  background: #ff3c41;
+.code-selector {
+  color: #03a9f4;
 }
 
-.bg-blue {
-  background: #0ebeff;
+.code-rule {
+  color: #ffcb6b;
+}
+
+.code-value {
+  color: #ff5370;
+}
+
+.dir {
+  color: #4caf50;
+}
+
+.git {
+  color: #03a9f4;
+}
+
+.git-branch {
+  color: #f44336;
 }

@@ -12,6 +12,8 @@ html * {
   grid-template-columns: repeat(6, 100px);
   grid-template-rows: 50px 200px;
   grid-template-areas: "header header header header header header" "aside aside main main main main";
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 
 .grid-element {

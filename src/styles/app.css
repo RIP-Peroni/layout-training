@@ -1,67 +1,32 @@
-.grid-3 {
-  height: 200px;
+body {
+  margin: 0;
+}
+
+.grid-2 {
   display: grid;
-  grid-template-rows: repeat(3, auto);
-
-  background: #ccc;
+  grid-template-columns: repeat(2, 50px);
+  grid-template-rows: repeat(2, 50px);
+  grid-auto-rows: 50px;
 }
 
-.box {
-  height: 40px;
-  width: 40px;
-
-  border: 1px solid #333;
+.bg-gray {
+  background: #717790;
 }
 
-.box-red {
+.bg-red {
   background: #ff3c41;
 }
 
-.box-green {
-  background: #47cf73;
-}
-
-.box-blue {
+.bg-blue {
   background: #0ebeff;
 }
 
-.bg-red-pastel {
-  background: #E57373;
+.bg-green {
+  background: #4caf50;
 }
 
-.bg-green-pastel {
-  background: #81C784;
+.bg-orange {
+  background: #ff9800;
 }
 
-.bg-blue-pastel {
-  background: #64B5F6;
-}
-
-.align-content-start {
-  align-content: start;
-}
-
-.align-content-end {
-  align-content: end;
-}
-
-.align-content-center {
-  align-content: center;
-}
-
-.align-content-stretch {
-  align-content: stretch;
-}
-
-.align-content-space-around {
-  align-content: space-around;
-}
-
-.align-content-space-evenly {
-  align-content: space-evenly;
-}
-
-.align-content-space-between {
-  align-content: space-between;
-}
-
+/*# sourceMappingURL=app.css.map */

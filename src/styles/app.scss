@@ -1,58 +1,59 @@
-.grid {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(9, 1fr);
+@font-face {
+  font-family: raleway;
+  src: url("../src/fonts/Raleway-Bold.ttf");
 }
 
-.grid div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+:root {
+  --color-gray: #dfe2d9;
+  --color-dark: #333;
+  --font-style: raleway, sans-serif;
+  --vertical-line-height: 25vh;
+}
+
+body {
   box-sizing: border-box;
-  height: 100px;
-  padding: 50px;
+  width: 715px;
+  margin: 0 auto;
+  padding: 20px 0 calc(var(--vertical-line-height) / 2);
 
-  color: #f9f9f9;
+  color: var(--color-dark);
+  font-family: var(--font-style);
+  line-height: 1.7;
 
-  transition: 0.7s;
+  background: var(--color-gray);
 }
 
-.col-6-start-1 {
-  grid-column: 1 / span 6;
+p {
+  margin: 0;
+
+  font-weight: bold;
 }
 
-.col-3 {
-  grid-column: span 3;
+h1 {
+  margin: 0;
+
+  font-size: 80px;
 }
 
-.relative {
+/* BEGIN (write your solution here) */
+.grid {
   position: relative;
+  display: grid;
+  //grid-gap: 20px;
+  grid-template-columns: repeat(5, 85px);
+
+  font-family: var(--font-style);
+}
+/* END */
+
+.blue {
+  background: #0271a1;
 }
 
-.absolute {
-  position: absolute;
+.orange {
+  background: #f37022;
 }
 
-.z-index-1 {
-  z-index: 1;
-}
-
-.z-index-2 {
-  z-index: 2;
-}
-
-.bg-red {
-  background: #ef5350;
-}
-
-.bg-blue {
-  background: #5c6bc0;
-}
-
-.bg-pink {
-  background: #f06292;
-}
-
-.z-index-2:hover {
-  opacity: 0;
+.pink {
+  background: #cd0076;
 }

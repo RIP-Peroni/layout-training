@@ -1,25 +1,25 @@
 .grid-6 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .grid-element {
+  box-sizing: border-box;
   height: 50px;
   padding: 10px 20px;
-  box-sizing: border-box;
-  background: #BBDEFB;
   color: #333;
+  background: #bbdefb;
 }
 
-.relative {
-  position: relative;
-  left: -50px;
+.absolute {
+  position: absolute;
   top: 10px;
+  left: 20px;
 }
 
 .bg-green {
-  background: #C8E6C9;
+  background: #c8e6c9;
 }
 
 /*# sourceMappingURL=app.css.map */

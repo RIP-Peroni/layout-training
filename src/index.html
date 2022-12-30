@@ -8,13 +8,16 @@
 </head>
 
 <body>
-<h1>Абсолютное позиционирование внутри grid-контейнера</h1>
-<section class="grid">
-    <div class="grid-element-1 bg-blue">1</div>
-    <div class="grid-element-2 bg-red">2</div>
-    <div class="grid-element-3 bg-green">3</div>
-    <div class="grid-element-4 bg-purple">4</div>
-    <div class="grid-element-5 bg-dark">Длинное текстовое содержание в 2 колонки </div>
+<section class="grid relative">
+    <div class="col-6-start-1 z-index-2 bg-red">
+        Важный блок, который меняется после наведения курсора мыши
+    </div>
+    <div class="col-6-start-1 z-index-1 absolute bg-blue">
+        Блок, который появляется после наведения курсора мыши
+    </div>
+    <div class="col-3 bg-pink">
+        Элемент сайта
+    </div>
 </section>
 </body>
 
